@@ -70,21 +70,21 @@
             "h1", "h2", "h3", "h4", "h5", "h6", "|", 
             "list-ul", "list-ol", "hr", "|",
             "link", "reference-link", "image", "code", "preformatted-text", "code-block", "table", "datetime", "emoji", "html-entities", "pagebreak", "|",
-            "goto-line", "watch", "preview", "fullscreen", "clear", "search", "|",
-            "help", "info"
+            "goto-line","preview", "fullscreen", "search", "|",
+            "help"
         ],
         simple : [
             "undo", "redo", "|", 
             "bold", "del", "italic", "quote", "uppercase", "lowercase", "|", 
             "h1", "h2", "h3", "h4", "h5", "h6", "|", 
             "list-ul", "list-ol", "hr", "|",
-            "watch", "preview", "fullscreen", "|",
-            "help", "info"
+            "preview", "fullscreen", "|",
+            "help"
         ],
         mini : [
             "undo", "redo", "|",
             "watch", "preview", "|",
-            "help", "info"
+            "help"
         ]
     };
     
@@ -3169,7 +3169,7 @@
         clear : function() {
             this.clear();
         },
-        
+
         search : function() {
             this.search();
         },
@@ -3178,9 +3178,6 @@
             this.executePlugin("helpDialog", "help-dialog/help-dialog");
         },
 
-        info : function() {
-            this.showInfoDialog();
-        }
     };
     
     editormd.keyMaps = {
